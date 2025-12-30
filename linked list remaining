@@ -1,0 +1,14 @@
+Steps to find starting node of cycle
+
+Pehle slow & fast pointers se cycle detect karo
+(jab slow == fast ho jaaye)
+
+Ab:
+
+Ek pointer ko head pe le aao
+
+Dusra pointer wahi rehne do (meeting point pe)
+
+Ab dono pointers ko 1–1 step chalao
+
+Jahan dono milenge → wahi cycle ka starting node hoga
