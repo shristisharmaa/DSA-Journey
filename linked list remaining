@@ -12,3 +12,39 @@ Dusra pointer wahi rehne do (meeting point pe)
 Ab dono pointers ko 1–1 step chalao
 
 Jahan dono milenge → wahi cycle ka starting node hoga
+
+Question
+
+Delete a node in a linked list when only that node is given
+(head access nahi hai)
+
+⭐ Trick / Logic
+
+Given node ke next node ka data lo
+
+Us data ko current node me copy kar do
+
+Current node ka next pointer
+→ next ke next pe point kara do
+
+✍️ Steps
+node->val = node->next->val;
+node->next = node->next->next;
+
+🧠 Why this works?
+
+Tum actually given node ko delete nahi kar rahe
+
+Tum uske next node ko delete kar rahe ho
+
+Aur uska data current node me copy kar rahe ho
+
+⏱ Complexity
+
+Time: O(1)
+
+Space: O(1)
+
+💬 Interview One-Liner (important)
+
+“Since head is not given, I copy the next node’s data into the current node and bypass the next node.
